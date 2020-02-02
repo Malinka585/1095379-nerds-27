@@ -21,7 +21,7 @@
         </div>
       </nav>
       <section>
-        <h2>Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <ul>
           <li>
             <p>Долго, дорого, скурпулезно.</p>
@@ -48,9 +48,9 @@
     </header>
 <main>
 
-  <h1>Нердс</h1>
+  <h1 class="visually-hidden">Нердс</h1>
   <section>
-    <h2>Преимущества</h2>
+    <h2 class="visually-hidden">Преимущества</h2>
     <ul>
       <li>
         <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
@@ -74,7 +74,7 @@
     </ul>
   </section>
   <section>
-    <h2>О нас</h2>
+    <h2 class="visually-hidden">О нас</h2>
     <div>
       <p>
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -107,7 +107,7 @@
     </div>
   </section>
   <section>
-    <h2>Партнеры</h2>
+    <h2 class="visually-hidden">Партнеры</h2>
     <ul>
       <li><a href="#"><img src="img/logo-1.png" width="260" height="180" alt="htmlacademy"></a></li>
       <li><a href="#"><img src="img/logo-2.png" width="260" height="180" alt="Borodinski"></a></li>
@@ -115,22 +115,20 @@
       <li><a href="#"><img src="img/logo-4.png" width="260" height="180" alt="Mishka"></a></li>
     </ul>
   </section>
-
-
 </main>
     <footer>
-      <select>
-        <h2>Контакты</h2>
-        <img src="https://via.placeholder.com/150x100" alt="Карта">
+      <section>
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+        </p>
         <div>
           <h3>Nёrds design studio</h3>
-          <p>191186, г. Санкт-Петербург,<br>
-             Б. Конюшенная, д. 19/8<br>
-             Телефон: +7 (812) 666-02-66
-          </p>
-          <a href="#">Напишите нам</a>
+          <p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+             <a href="#">Телефон: +7 (812) 666-02-66</a>
+             <a href="#">Напишите нам</a>
         </div>
-      </select>
+      </section>
       <ul>
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
@@ -140,8 +138,26 @@
         <p><b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="button">Закрыть</button>
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text"> Текст письма:</label>
+          <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>

@@ -24,7 +24,51 @@
     </header>
     <main>
       <section>
-        <h2>Каталог готовых шаблонов</h2>
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input id="filter-adaptive" type="radio" value="adaptivity" name="grit-group">
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input id="filter-fix" type="radio" value="fixed" name="grit-group">
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li>
+                <input id="filter-elastic" type="radio" value="elastic" name="grit-group">
+                <label for="filter-elastic">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input id="filter-slider" type="checkbox" value="slider" name="slider">
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input id="filter-advantages" type="checkbox" value="advantages" name="advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input id="filter-gallery" type="checkbox" value="gallery" name="gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input id="filter-basket" type="checkbox" value="basket" name="basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <span>Сортировать:</span>
         <ul>
           <li><a href="#">По цене</a></li>
@@ -114,6 +158,18 @@
       </section>
     </main>
     <footer>
+      <section>
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+        </p>
+        <div>
+          <h3>Nёrds design studio</h3>
+          <p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+             <a href="#">Телефон: +7 (812) 666-02-66</a>
+             <a href="#">Напишите нам</a>
+        </div>
+      </section>
       <ul>
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
@@ -123,8 +179,25 @@
         <p><b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </footer>
-
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="button">Закрыть</button>
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text"> Текст письма:</label>
+          <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
