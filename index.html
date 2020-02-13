@@ -9,43 +9,51 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип нердс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Студия</a></li>
-          <li><a href="news.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="basket">
-          <a href="#">Корзина</a>
-        </div>
-      </nav>
-      <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3>Долго, дорого, скурпулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-            <img src="img/slide1.png" wight="698" height="413" alt="Мобильные телефоны">
-          </li>
-          <li class="slider-item">
-            <h3>Любим математику как никто другой.</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-            <img src="img/slide2.png" wight="663" height="430" alt="Мобильные телефоны">
-          </li>
-          <li class="slider-item">
-            <h3>Только ночь, только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button button-red" href="#">Узнать больше</a>
-            <img src="img/slide3.png" wight="759" height="411" alt="Мобильные телефоны">
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип нердс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Студия</a></li>
+            <li><a href="news.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="basket">
+            <a href="#">Корзина</a>
+          </div>
+        </nav>
+        <section class="slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <ul class="slider-list">
+            <li class="slider-item slider-item-1">
+              <div class="slider-item-wrapper">
+                <h3>Долго, дорого, скрупулезно.</h3>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+              </div>
+              <img src="img/slide1.png" wight="698" height="413" alt="Мобильные телефоны">
+            </li>
+            <li class="slider-item slider-item-2">
+              <div class="slider-item-wrapper">
+                <h3>Любим математику как никто другой.</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+              </div>
+              <img src="img/slide2.png" wight="663" height="430" alt="Мобильные телефоны">
+            </li>
+            <li class="slider-item slider-item-3">
+              <div class="slider-item-wrapper">
+                <h3>Только ночь, только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="button button-red" href="#">Узнать больше</a>
+              </div>
+              <img src="img/slide3.png" wight="759" height="411" alt="Мобильные телефоны">
+            </li>
+          </ul>
+        </section>
+      </div>
     </header>
 <main class="container">
   <h1 class="visually-hidden">Нердс</h1>
@@ -115,27 +123,31 @@
     </ul>
   </section>
 </main>
-    <footer>
+    <footer class="main-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p>
           <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
         </p>
-        <div class="contacts-block">
-          <h3>Nёrds design studio</h3>
-          <p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-             <a class="phone" href="#">Телефон: +7 (812) 666-02-66</a>
-             <a class="button button-red" href="#">Напишите нам</a>
+        <div class="container">
+          <div class="contacts-block">
+            <h3>Nёrds design studio</h3>
+            <p>191186, г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+               <a class="phone" href="#">Телефон: +7 (812) 666-02-66</a>
+               <a class="button button-red" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-      <div class="footer-slogan">
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p class="sale-slogan">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container footer-bottom-wrapper">
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <div class="footer-slogan">
+          <p><b>Давайте дружить, это выгодно!</b></p>
+          <p class="sale-slogan">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
     <section class="modal">

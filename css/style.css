@@ -1,3 +1,15 @@
+* {
+  outline: 1px solid red;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +24,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -86,17 +105,39 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+
+.header-catalog {
+  margin-bottom: 56px;
+  /*временно для сетки*/
+
+  min-height: 355px;
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 49px;
+  margin-bottom: 18px;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 }
 
+.main-header-logo {
+  width: 160px;
+}
+
+.main-header-logo img {
+  display: block;
+}
+
 .site-navigation {
+  display: flex;
   margin: 0;
   padding: 0;
+  width: 440px;
   list-style: none;
 }
 
@@ -112,10 +153,28 @@ input[type="radio"].visually-hidden {
   color: #fb565a;
 }
 
+.basket {
+  width: 160px;
+}
+
 .slider-list {
  margin: 0;
  padding: 0;
  list-style: none;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-item-2,
+.slider-item-3 {
+  display: none;
+}
+
+.slider-item-wrapper {
+  width: 400px;
+  margin-right: 30px;
 }
 
 .slider-item h3 {
@@ -134,9 +193,20 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-list {
- margin: 0;
- padding: 0;
- list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  padding-right: 60px;
+  list-style: none;
+
+/*временно для сетки*/
+  min-height: 347px;
+}
+
+.feature-item {
+  width: 300px;
 }
 
 .feature-item h3 {
@@ -146,11 +216,24 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+
+  /*временно для сетки*/
+  min-height: 455px;
+}
+
 .about-slogan {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
+}
+
+.about-description {
+  width: 660px;
 }
 
 .about-description h3 {
@@ -165,6 +248,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.about-advantages {
+  width: 360px;
+}
+
+.about-advantages img {
+  display: block;
+}
+
 .advantage-slogan {
   font-weight: 700;
   text-transform: uppercase;
@@ -172,6 +263,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -190,6 +282,8 @@ input[type="radio"].visually-hidden {
 }
 
 .parthners-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -200,6 +294,36 @@ input[type="radio"].visually-hidden {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+}
+
+.main-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.filters .price {
+  margin-bottom: 43px;
+/*временно для сетки*/
+
+  min-height: 220px;
+}
+
+.filters .grid {
+  margin-bottom: 30px;
+  /*временно для сетки*/
+
+  min-height: 160px;
+}
+
+.filters .filter-features {
+  margin-bottom: 40px;
+  /*временно для сетки*/
+
+  min-height: 250px;
 }
 
 .filter legend {
@@ -252,7 +376,14 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.selection-wrapper {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 54px;
+}
+
 .selection-title {
+  width: 160px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -260,7 +391,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.catalog {
+  width: 760px;
+}
+
 .catalog-selection {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -286,9 +424,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
   list-style: 0;
+}
+
+.catalog-item {
+  margin-bottom: 33px;
+  width: 360px;
+  /*временно для сетки*/
+
+  min-height: 616px;
 }
 
 .catalog-item-title {
@@ -309,6 +459,15 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.catalog-item-information {
+  display: none;
+}
+
+.catalog-item:hover .catalog-item-information,
+.catalog-item:focus .catalog-item-information {
+  display: block;
+}
+
 .catalog-item-information p {
   font-size: 16px;
   line-height: 18px;
@@ -321,9 +480,16 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
   margin: 0;
   padding: 0;
+  padding-right: 18px;
   list-style: none;
+
+  /*временно для сетки*/
+  min-height: 50px;
 }
 
 .pagination-item {
@@ -350,6 +516,14 @@ input[type="radio"].visually-hidden {
   border: 3px solid #dbdbdb;
 }
 
+.main-footer {
+  margin-top: 80px;
+}
+
+.footer-catalog {
+ margin-top: 60px;
+}
+
 .contacts-block h3 {
   font-size: 18px;
   line-height: 30px;
@@ -359,19 +533,31 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-block {
+  width: 320px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+
+/*временно для сетки*/
+  min-height: 308px;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
 }
 
 .footer-social {
+  display: flex;
+  width: 260px;
   margin: 0;
+  margin-right: 140px;
   padding: 0;
   list-style: none;
 }
 
 .footer-slogan b {
+  width: 560px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -385,7 +571,11 @@ input[type="radio"].visually-hidden {
   color: #444444;
 }
 
-.modal h3 {
+.modal {
+  width: 960px;
+}
+
+.modal h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
